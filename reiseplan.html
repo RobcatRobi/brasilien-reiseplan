@@ -446,7 +446,7 @@ body.lang-pt [data-pt].block { display:block; }
 <div class="intro-dot active"></div>
 <div class="intro-dot"></div>
 </div>
-<div class="version-badge">📦 v1.2 · Aktualisiert: 15.08.2026 · 16:45</div>
+<div class="version-badge">📦 v1.3 · Aktualisiert: 16.08.2026 · 06:20</div>
 <div class="intro-scroll">SCROLL FÜR REISEPLAN</div>
 </div>
 
@@ -508,7 +508,7 @@ body.lang-pt [data-pt].block { display:block; }
 <p class="eyebrow">Sa 15. – Mo 17. + Fr 28. – So 30. August</p>
 <h2 class="section-title">São <em>Paulo</em> 🏙️</h2>
 
-<div class="day-card">
+<div class="day-card" id="saopaulo-checkin">
 <div class="day-photo-wrap">
 <img class="day-photo" src="https://lh3.googleusercontent.com/place-photos/AG9NLjAGFQ6Ify-k4-EqcbnJnovcGweYUvH4BE4Bs1anCmjiysl-uESIwF_puTwifUaHNsTjM6Y9zuCoSWcIbvBA7v9XywKISyRTyEuqEjByO1vjm6Id5o17PEihzv-REmR0dVzjEkwgWkdfymRR=s4800-w800-h600" alt="Cantinho Paulista">
 </div>
@@ -525,7 +525,7 @@ body.lang-pt [data-pt].block { display:block; }
 <div class="day-photo-wrap">
 <img class="day-photo" src="https://lh3.googleusercontent.com/place-photos/AG9NLjD8UX8MX4nQe_Lqx63F11yp4uZVwmKqeq8CUfCGABiQKK2IKxsOTQHXqFY_soIoF3U1uvWD7HY7LbDuwUeCnrKcuVD1jFGMzPIxGPb8LT3CxReshgZg7X1Jua-RO5JKjKF11UWX607QOtwgUXs=s4800-w800-h600" alt="Ibirapuera">
 </div>
-<div class="day-header d1"><div class="day-title">🌿 Sonntag im Park</div><div class="day-date">SONNTAG · 16. AUGUST</div></div>
+<div class="day-header d1" id="ibirapuera-sonntag"><div class="day-title">🌿 Sonntag im Park</div><div class="day-date">SONNTAG · 16. AUGUST</div></div>
 <div class="day-body">
 <div class="day-story"><span data-de>Ein freier Sonntag! Der <strong>Parque Ibirapuera</strong> ist nur 1.4km entfernt – São Paulos grüne Lunge mit 7.7km Laufweg um mehrere Seen. Sonntags nutzen tausende Paulistaner die autofreien Wege im Park für Joggen, Rad fahren oder einfach Spazieren. Danach lohnt sich ein Abstecher ins MAC-Museum mit Panoramablick über den Park.</span><span data-pt>Um domingo livre! O <strong>Parque Ibirapuera</strong> fica a apenas 1,4km – o pulmão verde de São Paulo com uma pista de 7,7km ao redor de vários lagos. Aos domingos, milhares de paulistanos usam as vias sem carros do parque para correr, andar de bicicleta ou simplesmente passear. Depois vale a pena uma visita ao Museu MAC, com vista panorâmica do parque.</span></div>
 <div class="sched-item"><div class="sched-time">Morgens</div><div class="sched-text"><strong>🏃 Joggen im Ibirapuera</strong> – autofreie Wege, viele Einheimische.</div></div>
@@ -536,7 +536,7 @@ body.lang-pt [data-pt].block { display:block; }
 </div>
 </div></div>
 
-<div class="day-card">
+<div class="day-card" id="pedra-grande">
 <div class="day-header d1"><div class="day-title"><span data-de>🏃 Trail-Lauf zur Pedra Grande</span><span data-pt>🏃 Trail até a Pedra Grande</span></div><div class="day-date">SONNTAG · 16. AUGUST</div></div>
 <div class="day-body">
 <div class="day-story"><span data-de>Der Plan für den freien Sonntag: erst ein Aufwärm-Lauf von der Metro Vergueiro hoch zur <strong>Avenida Paulista</strong> – die ist sonntags komplett für den Autoverkehr gesperrt, ideal zum Laufen. Danach geht's mit öffentlichen Verkehrsmitteln in den <strong>Parque Estadual da Cantareira</strong> zum berühmten Trail auf die <strong>Pedra Grande</strong> – ca. 9.5km hin und zurück, stetig bergauf, ein echter Trail-Lauf mit Aussicht über São Paulo. Abschluss: zurück zur Wohnung in Liberdade.</span><span data-pt>O plano para o domingo livre: primeiro uma corrida de aquecimento do Metrô Vergueiro até a <strong>Avenida Paulista</strong> – aos domingos fechada para carros, ideal para correr. Depois, transporte público até o <strong>Parque Estadual da Cantareira</strong> para a famosa trilha até a <strong>Pedra Grande</strong> – cerca de 9,5km ida e volta, sempre subindo, um verdadeiro trail run com vista de São Paulo. Encerramento: volta ao apartamento em Liberdade.</span></div>
@@ -554,7 +554,7 @@ body.lang-pt [data-pt].block { display:block; }
 </div>
 </div></div>
 
-<div class="day-card">
+<div class="day-card" id="mathis-ltda">
 <div class="day-header d1"><div class="day-title">🏭 Mathis Ltda & Weiterreise</div><div class="day-date">MONTAG · 17. AUGUST</div></div>
 <div class="day-body">
 <div class="day-story"><span data-de>Geschäftstermin bei <strong>Mathis Ltda in Cotia</strong> mit Pedro. Am Abend geht's weiter Richtung Süden: Flug von Congonhas nach Navegantes, dann per Uber weiter zum Timbó Park Hotel für die Febratex-Woche.</span><span data-pt>Reunião de negócios na <strong>Mathis Ltda em Cotia</strong> com Pedro. À noite, seguem rumo ao sul: voo de Congonhas para Navegantes, depois de Uber até o Timbó Park Hotel para a semana da Febratex.</span></div>
@@ -1226,14 +1226,13 @@ const events = [
   { date:'20260815', start:'0920', end:'1100', tz:true, type:'flight', title:'✈️ KLM KL1918 · ZRH → AMS', ptTitle:'✈️ KLM KL1918 · ZRH → AMS', detail:'Zürich Flughafen → Amsterdam Schiphol', ptDetail:'Aeroporto de Zurique → Amsterdam Schiphol', code:'ZCGSV9', seat:'Sitz 2A' },
   { date:'20260815', start:'1300', end:'1950', tz:true, type:'flight', title:'✈️ KLM KL0791 · AMS → GRU', ptTitle:'✈️ KLM KL0791 · AMS → GRU', detail:'Amsterdam → São Paulo Guarulhos · Boeing 777-300ER', ptDetail:'Amsterdam → São Paulo Guarulhos · Boeing 777-300ER', code:'ZCGSV9', seat:'Sitz 2A' },
   { date:'20260815', start:'2000', end:'2030', type:'event', title:'🚗 Auto-Abholung GRU', ptTitle:'🚗 Retirada do Carro GRU', detail:'Guarulhos Airport · Rod. Hélio Smidt, Jd. Cumbica', ptDetail:'Aeroporto de Guarulhos · Rod. Hélio Smidt, Jd. Cumbica', code:'MOB364E4W2QW', extra:'Automatic Compact SUV' },
-  { date:'20260815', start:'2100', end:'2200', type:'hotel', title:'🏠 Check-in Cantinho Paulista', ptTitle:'🏠 Check-in Cantinho Paulista', detail:'Rua Vergueiro 1009, Liberdade, São Paulo', code:'5519.870.641', extra:'PIN 5639' },
+  { date:'20260815', start:'2100', end:'2200', type:'hotel', anchor:'saopaulo-checkin', title:'🏠 Check-in Cantinho Paulista', ptTitle:'🏠 Check-in Cantinho Paulista', detail:'Rua Vergueiro 1009, Liberdade, São Paulo', code:'5519.870.641', extra:'PIN 5639' },
 
   // So 16.8
-  { date:'20260816', start:'0800', end:'1300', type:'event', title:'🏃 Trail-Lauf Pedra Grande (Cantareira)', ptTitle:'🏃 Trail Pedra Grande (Cantareira)', detail:'Aufwärmen Av. Paulista → Metro/Bus zum Parque Cantareira → 9.5km Trail', ptDetail:'Aquecimento Av. Paulista → Metrô/Ônibus ao Parque Cantareira → trail 9,5km' },
-  { date:'20260816', start:'0800', end:'1000', type:'event', title:'🏃 Joggen Parque Ibirapuera', ptTitle:'🏃 Corrida no Parque Ibirapuera', detail:'Autofreie Wege, 7.7km Runde um die Seen', ptDetail:'Trilhas sem carros, volta de 7,7km ao redor dos lagos' },
+  { date:'20260816', start:'0800', end:'1300', type:'event', anchor:'pedra-grande', title:'🏃 Trail-Lauf Pedra Grande (Cantareira)', ptTitle:'🏃 Trail Pedra Grande (Cantareira)', detail:'Aufwärmen Av. Paulista → Metro/Bus zum Parque Cantareira → 9.5km Trail', ptDetail:'Aquecimento Av. Paulista → Metrô/Ônibus ao Parque Cantareira → trail 9,5km' },
 
   // Mo 17.8
-  { date:'20260817', start:'0900', end:'1600', type:'event', title:'🏭 Mathis Ltda Cotia', ptTitle:'🏭 Mathis Ltda Cotia', detail:'Geschäftstermin mit Pedro', ptDetail:'Reunião de negócios com Pedro' },
+  { date:'20260817', start:'0900', end:'1600', type:'event', anchor:'mathis-ltda', title:'🏭 Mathis Ltda Cotia', ptTitle:'🏭 Mathis Ltda Cotia', detail:'Geschäftstermin mit Pedro', ptDetail:'Reunião de negócios com Pedro' },
   { date:'20260817', start:'2000', end:'2030', type:'event', title:'🚗 Auto-Rückgabe CGH', ptTitle:'🚗 Devolução do Carro CGH', detail:'Congonhas Airport · R. Otávio Tarquínio de Souza 379, Campo Belo', ptDetail:'Aeroporto de Congonhas · R. Otávio Tarquínio de Souza 379, Campo Belo', code:'MOB364E4W2QW' },
   { date:'20260817', start:'1835', end:'1940', tz:true, type:'flight', title:'✈️ LATAM LA3140 · CGH → NVT', ptTitle:'✈️ LATAM LA3140 · CGH → NVT', detail:'São Paulo Congonhas → Navegantes', ptDetail:'São Paulo Congonhas → Navegantes', code:'YODKUM' },
   { date:'20260817', start:'2100', type:'hotel', title:'🏨 Check-in Timbó Park Hotel', ptTitle:'🏨 Check-in Timbó Park Hotel', detail:'R. Blumenau 141, Timbó/SC · Tel +55 47 3281-0700', ptDetail:'R. Blumenau 141, Timbó/SC · Tel +55 47 3281-0700', extra:'via Mathis Ltda' },
@@ -1340,7 +1339,7 @@ function buildAgenda() {
         <div class="event-time">${timeDisplay}</div>
         <div class="event-bar ${e.type}"></div>
         <div class="event-main">
-          <div class="event-title"><span data-de>${titleDe}</span><span data-pt>${titlePt}</span></div>
+          <div class="event-title">${e.anchor ? `<a href="#${e.anchor}" onclick="setTimeout(()=>document.getElementById('${e.anchor}').scrollIntoView({behavior:'smooth',block:'start'}),50)" style="color:inherit;text-decoration:underline;text-decoration-style:dotted;">` : ''}<span data-de>${titleDe}</span><span data-pt>${titlePt}</span>${e.anchor ? '</a> 🔗' : ''}</div>
           <div class="event-detail"><span data-de>${detailDe}</span><span data-pt>${detailPt}</span></div>
           ${codeHtml ? '<div>'+codeHtml+'</div>' : ''}
           ${peopleHtml ? '<div>'+peopleHtml+'</div>' : ''}
