@@ -453,7 +453,7 @@ body.lang-pt [data-pt].block { display:block; }
 <div class="intro-dot active"></div>
 <div class="intro-dot"></div>
 </div>
-<div class="version-badge">📦 v1.7 · Aktualisiert: 16.08.2026 · 14:30</div>
+<div class="version-badge">📦 v1.8 · Aktualisiert: 16.08.2026 · 16:15</div>
 <div class="intro-scroll">SCROLL FÜR REISEPLAN</div>
 </div>
 
@@ -574,7 +574,7 @@ body.lang-pt [data-pt].block { display:block; }
 </div>
 </div></div>
 
-<div class="day-card">
+<div class="day-card" id="ccsp-peticov">
 <div class="day-header d1"><div class="day-title"><span data-de>🎨 CCSP · Antonio Peticov Ausstellung</span><span data-pt>🎨 CCSP · Exposição Antonio Peticov</span></div><div class="day-date">SONNTAG NACHMITTAG · 16. AUGUST</div></div>
 <div class="day-body">
 <div class="day-story"><span data-de>Nach dem Trail: mit dem Taxi zur Metrostation, dann per Metro zurück zur Station bei der Wohnung, und von dort ins <strong>Centro Cultural São Paulo (CCSP)</strong> zur grossen Retrospektive von <strong>Antonio Peticov</strong>.</span><span data-pt>Depois do trail: de táxi até a estação de metrô, depois de metrô de volta à estação perto do apartamento, e de lá ao <strong>Centro Cultural São Paulo (CCSP)</strong> para a grande retrospectiva de <strong>Antonio Peticov</strong>.</span></div>
@@ -623,7 +623,7 @@ body.lang-pt [data-pt].block { display:block; }
 <div class="tip"><strong>💡 <span data-de>Tresen-Tipp:</span><span data-pt>Dica do balcão:</span></strong> <span data-de>Bei Sushi Yassuh und Sushi Kenzo nach einem Platz direkt am Tresen fragen ("counter seat") – dort siehst du den Koch live arbeiten, genau wie du es aus Japan kennst.</span><span data-pt>No Sushi Yassuh e Sushi Kenzo, peça um lugar no balcão ("counter seat") – lá você vê o chef trabalhando ao vivo.</span></div>
 </div></div>
 
-<div class="day-card">
+<div class="day-card" id="navegantes-hotel">
 <div class="day-header d3"><div class="day-title"><span data-de>🌊 Übernachtung am Meer in Navegantes</span><span data-pt>🌊 Pernoite à beira-mar em Navegantes</span></div><div class="day-date"><span data-de>MONTAG ABEND · 17. AUGUST</span><span data-pt>SEGUNDA À NOITE · 17. AGOSTO</span></div></div>
 <div class="day-body">
 <div class="day-story"><span data-de>Landung NVT 19:40 – statt direkt weiter nach Timbó zu fahren, <strong>eine Nacht am Strand in Navegantes/Gravatá übernachten</strong>. Am Dienstag dann entspannt gegen Mittag Richtung Blumenau, denn die Febratex öffnet erst um 14:00 Uhr – pünktlich, ausgeruht und gut angezogen dort ankommen.</span><span data-pt>Pouso NVT 19h40 – em vez de seguir direto para Timbó, <strong>uma noite na praia em Navegantes/Gravatá</strong>. Na terça, então, tranquilo por volta do meio-dia rumo a Blumenau, já que a Febratex só abre às 14h00 – chegar lá pontual, descansado e bem vestido.</span></div>
@@ -638,12 +638,12 @@ body.lang-pt [data-pt].block { display:block; }
 </div>
 
 <div class="day-links">
-<a href="https://maps.google.com/?cid=14172407891076785364" class="day-link maps" target="_blank">📍 Navega Beach Palace</a>
-<a href="https://maps.google.com/?cid=9089075420813262777" class="day-link maps" target="_blank">📍 Pousada Enseada São Miguel</a>
+<a href="https://maps.google.com/?q=Navega+Beach+Palace+Hotel+Navegantes" class="day-link maps" target="_blank">📍 Navega Beach Palace</a>
+<a href="https://maps.google.com/?q=Pousada+Enseada+Sao+Miguel+Penha" class="day-link maps" target="_blank">📍 Pousada Enseada São Miguel</a>
 </div>
 </div></div>
 
-<div class="day-card">
+<div class="day-card" id="blumenau-fahrt">
 <div class="day-header d3"><div class="day-title"><span data-de>🚗 Entspannte Fahrt nach Blumenau</span><span data-pt>🚗 Trajeto tranquilo até Blumenau</span></div><div class="day-date">DIENSTAG · 18. AUGUST</div></div>
 <div class="day-body">
 <div class="day-story"><span data-de>Ausgeschlafen und entspannt: gegen Mittag von Navegantes Richtung Timbó/Blumenau starten (~1h Fahrt), Zeit zum Umziehen im Timbó Park Hotel, dann pünktlich zur Febratex-Eröffnung um 14:00 Uhr in Blumenau ankommen.</span><span data-pt>Descansado e tranquilo: partir de Navegantes rumo a Timbó/Blumenau por volta do meio-dia (~1h de trajeto), tempo para trocar de roupa no Timbó Park Hotel, e chegar pontualmente à abertura da Febratex às 14h00 em Blumenau.</span></div>
@@ -666,8 +666,8 @@ body.lang-pt [data-pt].block { display:block; }
 </div>
 
 <div class="day-links">
-<a href="https://maps.google.com/?cid=6013730665022584174" class="day-link maps" target="_blank">📍 Sushi Yassuh</a>
-<a href="https://maps.google.com/?cid=11713636460871395790" class="day-link maps" target="_blank">📍 Sushi Kenzo</a>
+<a href="https://maps.google.com/?q=Sushi+Yassuh+Liberdade+Sao+Paulo" class="day-link maps" target="_blank">📍 Sushi Yassuh</a>
+<a href="https://maps.google.com/?q=Sushi+Kenzo+Liberdade+Sao+Paulo" class="day-link maps" target="_blank">📍 Sushi Kenzo</a>
 </div>
 </div></div>
 </div></div>
@@ -1340,13 +1340,14 @@ const events = [
 
   // So 16.8
   { date:'20260816', start:'0800', end:'1300', type:'event', anchor:'pedra-grande', title:'🏃 Trail-Lauf Pedra Grande (Cantareira)', ptTitle:'🏃 Trail Pedra Grande (Cantareira)', detail:'Aufwärmen Av. Paulista → Metro/Bus zum Parque Cantareira → 9.5km Trail', ptDetail:'Aquecimento Av. Paulista → Metrô/Ônibus ao Parque Cantareira → trail 9,5km' },
+  { date:'20260816', start:'1500', type:'event', anchor:'ccsp-peticov', title:'🎨 CCSP · Ausstellung Antonio Peticov', ptTitle:'🎨 CCSP · Exposição Antonio Peticov', detail:'Retrospektive, ~400 Werke', ptDetail:'Retrospectiva, ~400 obras' },
 
   // Mo 17.8
   { date:'20260817', start:'1000', type:'event', title:'🤔 Programm offen · evtl. Marianna & Vera', ptTitle:'🤔 Programa em aberto · talvez Marianna e Vera', detail:'Noch nicht entschieden', ptDetail:'Ainda não decidido' },
   { date:'20260817', start:'2000', end:'2030', type:'event', title:'🚗 Auto-Rückgabe CGH', ptTitle:'🚗 Devolução do Carro CGH', detail:'Congonhas Airport · R. Otávio Tarquínio de Souza 379, Campo Belo', ptDetail:'Aeroporto de Congonhas · R. Otávio Tarquínio de Souza 379, Campo Belo', code:'MOB364E4W2QW' },
   { date:'20260817', start:'1835', end:'1940', tz:true, type:'flight', title:'✈️ LATAM LA3140 · CGH → NVT', ptTitle:'✈️ LATAM LA3140 · CGH → NVT', detail:'São Paulo Congonhas → Navegantes · bestätigt, bleibt Montagabend', ptDetail:'São Paulo Congonhas → Navegantes · confirmado, mantém segunda à noite', code:'YODKUM' },
-  { date:'20260817', start:'2000', type:'hotel', title:'🌊 Übernachtung Navegantes/Gravatá', ptTitle:'🌊 Pernoite Navegantes/Gravatá', detail:'Strandhotel statt direkt nach Timbó', ptDetail:'Hotel na praia em vez de seguir direto para Timbó' },
-  { date:'20260818', start:'1200', type:'hotel', title:'🏨 Check-in Timbó Park Hotel', ptTitle:'🏨 Check-in Timbó Park Hotel', detail:'R. Blumenau 141, Timbó/SC · Tel +55 47 3281-0700 · vor Febratex-Eröffnung 14:00', ptDetail:'R. Blumenau 141, Timbó/SC · Tel +55 47 3281-0700 · antes da abertura Febratex 14h00', extra:'via Mathis Ltda' },
+  { date:'20260817', start:'2000', type:'hotel', anchor:'navegantes-hotel', title:'🌊 Übernachtung Navegantes/Gravatá', ptTitle:'🌊 Pernoite Navegantes/Gravatá', detail:'Strandhotel statt direkt nach Timbó', ptDetail:'Hotel na praia em vez de seguir direto para Timbó' },
+  { date:'20260818', start:'1200', type:'hotel', anchor:'blumenau-fahrt', title:'🏨 Check-in Timbó Park Hotel', ptTitle:'🏨 Check-in Timbó Park Hotel', detail:'R. Blumenau 141, Timbó/SC · Tel +55 47 3281-0700 · vor Febratex-Eröffnung 14:00', ptDetail:'R. Blumenau 141, Timbó/SC · Tel +55 47 3281-0700 · antes da abertura Febratex 14h00', extra:'via Mathis Ltda' },
 
   // Di 18.8
   { date:'20260818', start:'0800', type:'event', title:'⭐ Febratex Start · Abfahrt Hotel', ptTitle:'⭐ Início Febratex · Saída do Hotel', detail:'Vorbereitungen Stand', ptDetail:'Preparativos finais do estande', people:['Pedro','Robi','Isis','Robson','Juliana','Paul','Miriam'] },
