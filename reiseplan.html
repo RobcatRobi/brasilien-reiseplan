@@ -453,7 +453,7 @@ body.lang-pt [data-pt].block { display:block; }
 <div class="intro-dot active"></div>
 <div class="intro-dot"></div>
 </div>
-<div class="version-badge">📦 v1.9 · Aktualisiert: 16.08.2026 · 18:00</div>
+<div class="version-badge">📦 v2.0 · Aktualisiert: 16.08.2026 · 19:30</div>
 <div class="intro-scroll">SCROLL FÜR REISEPLAN</div>
 </div>
 
@@ -996,9 +996,26 @@ Desmontagem após o fechamento da feira</span></div>
 <div class="day-body">
 <div class="day-story"><span data-de>Letztes Frühstück an Bord. Um 08:00 legt das Schiff im Porto de Manaus an. Transfer zum Flughafen mit Schurchrut zusammen 👬 – Abflug jetzt 12:05!</span><span data-pt>Último café da manhã a bordo. Às 08h00 o navio atraca no Porto de Manaus. Traslado ao aeroporto junto com o Schurchrut 👬 – partida agora às 12h05!</span></div>
 <div class="sched-item"><div class="sched-time">08:00</div><div class="sched-text"><strong>🛳️ Ankunft Porto de Manaus.</strong></div></div>
+<div class="sched-item"><div class="sched-time">09:00</div><div class="sched-text"><strong><span data-de>🛩️ Optional: Rundflug Anavilhanas</span><span data-pt>🛩️ Opcional: Voo panorâmico Anavilhanas</span></strong><span data-de"> (30min) – falls die Zeit reicht</span><span data-pt> (30min) – se o tempo permitir</span></div></div>
 <div class="sched-item"><div class="sched-time">12:05</div><div class="sched-text"><strong>✈️ Abflug MAO→GRU</strong> mit Schurchrut.</div></div>
+
+<div class="wiki-box" style="border-left-color:#e8732a">
+<div class="wiki-box-title">🛩️ <span data-de>Vorschlag: Wasserflugzeug-Rundflug Anavilhanas</span><span data-pt>Sugestão: Voo panorâmico de hidroavião Anavilhanas</span></div>
+<div class="wiki-box-text">
+<span data-de">Am letzten Amazonas-Tag: ein 30-minütiger Wasserflugzeug-Rundflug über das Anavilhanas-Archipel (UNESCO-Welterbe, 400+ Inseln) – Start meist direkt vom Rio Negro beim Hotel Tropical, führt über die Inselwelt, teils auch Encontro das Águas und Manaus-Stadtsilhouette. Anbieter: <strong>Amazon Amazing Tours</strong> oder <strong>Manaus Amazing Tours</strong>, buchbar z.B. über GetYourGuide, ca. USD 170-180 für die Gruppe (bis 4 Personen), 30min-Option.</span>
+<span data-pt>No último dia do Amazonas: um voo panorâmico de hidroavião de 30 minutos sobre o arquipélago de Anavilhanas (Patrimônio da UNESCO, 400+ ilhas) – decolagem geralmente direto do Rio Negro perto do Hotel Tropical, sobrevoando o mundo de ilhas, às vezes também o Encontro das Águas e o perfil da cidade de Manaus. Operadoras: <strong>Amazon Amazing Tours</strong> ou <strong>Manaus Amazing Tours</strong>, reservável via GetYourGuide, cerca de USD 170-180 para o grupo (até 4 pessoas), opção de 30min.</span>
+</div>
+<div class="wiki-facts">
+<span class="wiki-fact">⏱️ 30min-Option wählen</span>
+<span class="wiki-fact">📍 Start Hotel Tropical Manaus</span>
+<span class="wiki-fact">🌊 Anavilhanas UNESCO-Welterbe</span>
+</div>
+</div>
+<div class="tip" style="background:#fce4ec; border-left-color:#c0392b"><strong>⚠️ <span data-de>Zeit-Warnung:</span><span data-pt>Aviso de tempo:</span></strong> <span data-de>Sehr knapp! Zwischen Ausschiffung (08:00) und Abflug (12:05) bleiben nur ~4h, davon geht Transfer + Check-in + Sicherheit ab. Nur machen, wenn VORAB gebucht und Startzeit garantiert pünktlich um 09:00 möglich ist – sonst lieber auslassen und stattdessen entspannt zum Flughafen.</span><span data-pt>Muito apertado! Entre o desembarque (08h00) e a partida (12h05) sobram só ~4h, descontando traslado + check-in + segurança. Só fazer se reservado com ANTECEDÊNCIA e horário de decolagem garantido às 09h00 – senão melhor pular e ir tranquilo para o aeroporto.</span></div>
+
 <div class="day-links">
-<a href="https://maps.google.com/?cid=15326897707354126160" class="day-link maps" target="_blank">📍 Porto de Manaus</a>
+<a href="https://maps.google.com/?q=Porto+de+Manaus" class="day-link maps" target="_blank">📍 Porto de Manaus</a>
+<a href="https://www.getyourguide.com/manaus-l917/manaus-voo-panoramico-na-floresta-tropical-amazonica-t260512/" class="day-link web" target="_blank">🛩️ Rundflug buchen (GetYourGuide)</a>
 </div>
 </div></div>
 
@@ -1417,6 +1434,7 @@ const events = [
 
   // Fr 28.8
   { date:'20260828', start:'0800', type:'boat', title:'🛳️ Ankunft Porto de Manaus', ptTitle:'🛳️ Chegada Porto de Manaus', detail:'Check-out 08:30 · Transfer inkl.', ptDetail:'Check-out 08:30 · Traslado incluído' },
+  { date:'20260828', start:'0900', end:'0930', type:'event', title:'🛩️ Optional: Rundflug Anavilhanas', ptTitle:'🛩️ Opcional: Voo panorâmico Anavilhanas', detail:'⚠️ Nur falls VORAB gebucht, 30min · Zeit sehr knapp vor Abflug 12:05', ptDetail:'⚠️ Só se reservado com ANTECEDÊNCIA, 30min · Tempo muito apertado antes da partida 12h05' },
   { date:'20260828', start:'1630', tz:true, type:'flight', title:'✈️ LATAM LA3297 · MAO → GRU (gebucht)', ptTitle:'✈️ LATAM LA3297 · MAO → GRU (reservado)', detail:'⚠️ Option B ~12:05 mit Schurchrut NICHT bestätigt – am Check-in versuchen!', ptDetail:'⚠️ Opção B ~12:05 com Schurchrut NÃO confirmada – tentar no check-in!', code:'JWWJXD', extra:'23kg Gepäck' },
   { date:'20260828', start:'2200', type:'hotel', title:'🏠 Check-in Cantinho Paulista', ptTitle:'🏠 Check-in Cantinho Paulista', detail:'Rua Vergueiro 1009, Liberdade', ptDetail:'Rua Vergueiro 1009, Liberdade', code:'5479.924.548', extra:'PIN 2412' },
 
